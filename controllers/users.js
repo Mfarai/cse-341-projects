@@ -10,7 +10,7 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
-    const userid = Objectid(req.params.id);
+    const userId = Objectid(req.params.id);
     const result = await mongodb.getDatabase().db().collection('users').find({_id: userId});
     result.toArray().then((users) =>{
         res.setHeader('content-type', 'application/json');
