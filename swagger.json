@@ -8,7 +8,7 @@
   "host": "https://project1-3xbo.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
