@@ -5,10 +5,10 @@
     "description": "users Api",
     "version": "1.0.0"
   },
-  "host": "project1-3xbo.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
@@ -24,7 +24,17 @@
         }
       }
     },
-    "/users/": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/friends/": {
       "get": {
         "description": "",
         "produces": [
@@ -45,13 +55,25 @@
             "schema": {
               "type": "object",
               "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "surname": {
+                  "example": "any"
+                },
+                "phone": {
+                  "example": "any"
+                },
                 "email": {
                   "example": "any"
                 },
                 "username": {
                   "example": "any"
                 },
-                "name": {
+                "color": {
+                  "example": "any"
+                },
+                "city": {
                   "example": "any"
                 },
                 "ipaddress": {
@@ -62,8 +84,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
           "500": {
             "description": "Internal Server Error"
@@ -71,7 +93,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/friends/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -88,6 +110,12 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -106,13 +134,25 @@
             "schema": {
               "type": "object",
               "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "surname": {
+                  "example": "any"
+                },
+                "phone": {
+                  "example": "any"
+                },
                 "email": {
                   "example": "any"
                 },
                 "username": {
                   "example": "any"
                 },
-                "name": {
+                "color": {
+                  "example": "any"
+                },
+                "city": {
                   "example": "any"
                 },
                 "ipaddress": {
