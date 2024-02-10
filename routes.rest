@@ -24,11 +24,11 @@ content-type: application/json
 }
 
 ### Update user
-PUT http://localhost:3000/friends/65b6703f7a00466ca34fe1a0 HTTP/1.1
+PUT http://localhost:3000/friends/65b670727a00466ca34fe1a1 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "John Doe",
+    "name": " Doe",
     "surname": "mutero",
     "phone":"+263 78 6414 606",
     "email": "test4@test.com",
