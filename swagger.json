@@ -5,10 +5,10 @@
     "description": "users Api",
     "version": "1.0.0"
   },
-  "host": "https://project1-3xbo.onrender.com",
+  "host": "project1-3xbo.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
